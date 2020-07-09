@@ -10,7 +10,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello Maitri, Change whatever you want!")
+        VStack {
+           Spacer()
+           Text("Hello Maitri, Change whatever you want!")
+           Spacer()
+           Button(action: {
+           }) {
+              VStack {
+                 Text("This is a change in the code")
+                    .font(Font.system(.body))
+                    .padding()
+                 Image(systemName: "gift")
+                    .font(.largeTitle)
+                    .padding()
+              }
+              .background(Color.yellow)
+           .cornerRadius(10)
+           .shadow(radius: 20)
+           }
+           Spacer()
+        }
     }
 }
 
